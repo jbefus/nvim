@@ -7,9 +7,10 @@ require("nvim-lsp-installer").setup({
             server_uninstalled = "✗"
         }
     }
-})local status_ok, _ = pcall(require, "lspconfig")
+})
+local status_ok, error = pcall(require, "lspconfig")
 if not status_ok then
-  print("couldn't load lsp config ")
+  print("couldn't load lsp config ".. error)
   return
 end
 -- Mappings.

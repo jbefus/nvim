@@ -15,7 +15,7 @@ vim.keymap.set('v', '<', '<gv')
 -- file explorer
 vim.keymap.set('n', '<C-b>', ':Lex 30<CR>')
 -- source config file (WINDOWS)
--- vim.keymap.set('n', '<Leader>cs', ':source ' .. userhome)
+ vim.keymap.set('n', '<Leader>cs', ':source ' .. os.getenv("MYVIMRC"))
 -- buffer navigation
 vim.keymap.set('n', '<S-Left>', ':bprevious<CR>')
 vim.keymap.set('n', '<S-Right>', ':bnext<CR>')
