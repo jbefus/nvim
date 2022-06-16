@@ -1,1 +1,0 @@
-/home/drgg/_config/nvim/init.lua
