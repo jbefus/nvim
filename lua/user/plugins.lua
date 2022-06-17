@@ -88,7 +88,7 @@ return require('packer').startup(function(use)
     use "neovim/nvim-lspconfig"
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-telescope/telescope-media-files.nvim'
-    -- Have packer use a popup window
 
+    use 'tpope/vim-surround'
 end)
 
