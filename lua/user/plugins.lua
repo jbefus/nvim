@@ -86,9 +86,17 @@ return require('packer').startup(function(use)
     }
 })
     use "neovim/nvim-lspconfig"
+    -- commenting
+    use "numToStr/Comment.nvim" 
+    use "JoosepAlviste/nvim-ts-context-commentstring"
+    -- telescope
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-telescope/telescope-media-files.nvim'
+    use { "nvim-telescope/telescope-file-browser.nvim" }
 
+    -- utility
     use 'tpope/vim-surround'
+    use "mattn/emmet-vim"
+
 end)
 
