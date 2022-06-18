@@ -20,8 +20,8 @@ vim.keymap.set('v', '<', '<gv')
 -- vim.keymap.set('n', '<Leader>sr', ':source ' .. os.getenv("MYVIMRC"))
 
 -- buffer navigation
-vim.keymap.set('n', '<S-Left>', ':bprevious<CR>')
-vim.keymap.set('n', '<S-Right>', ':bnext<CR>')
+vim.keymap.set('n', '<S-h>', ':bprevious<CR>')
+vim.keymap.set('n', '<S-l>', ':bnext<CR>')
 
 -- move line up and down
 vim.keymap.set('n', '<A-j>', ':m .+1<cr>==')
