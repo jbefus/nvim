@@ -90,7 +90,7 @@ return require('packer').startup(function(use)
     use "neovim/nvim-lspconfig"
 
     -- commenting
-    use "numToStr/Comment.nvim" 
+    use "numToStr/Comment.nvim"
     use "JoosepAlviste/nvim-ts-context-commentstring"
 
     -- telescope
@@ -102,6 +102,11 @@ return require('packer').startup(function(use)
     -- nvim tree
     use {'kyazdani42/nvim-web-devicons'}
     use {'kyazdani42/nvim-tree.lua'}
+
+    -- buffer line
+    use "akinsho/bufferline.nvim"
+    use "moll/vim-bbye"
+
     -- utility
     use 'tpope/vim-surround'
     use "mattn/emmet-vim"
