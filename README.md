@@ -2,6 +2,21 @@
 
 ### 100% lua, 100% luv
 
+## What things you 100% need:
+
+- Neovim python support
+
+  ```
+  pip install pynvim
+  ```
+
+- Neovim node support
+
+  ```
+  npm i -g neovim
+  ```
+---
+
 ## Ressources
 [config with lua basics](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/) 
 ### Vim Surround reference
