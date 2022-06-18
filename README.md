@@ -4,9 +4,6 @@
 
 ## Ressources
 [config with lua basics](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/) 
-
-
-
 ### Vim Surround reference
 It's easiest to explain with examples.  Press `cs"'` inside
 
@@ -63,3 +60,15 @@ and removing pairs of tags simultaneously is a breeze.
 
 The `.` command will work with `ds`, `cs`, and `yss` if you install
 [repeat.vim](https://github.com/tpope/vim-repeat).
+
+## vim emmet reference
+
+```html
+.contet
+````
+
+press CTRL + y and then ,(comma) 
+
+```html
+  <div class="contet"></div>
+```
