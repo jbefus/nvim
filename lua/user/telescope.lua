@@ -4,10 +4,6 @@
  return
  end
 
-local telescope = require "telescope"
-
-telescope.load_extension('media_files')
-
 local actions = require "telescope.actions"
 
 telescope.setup {
@@ -92,12 +88,6 @@ telescope.setup {
     -- builtin picker
   },
   extensions = {
-    media_files = {
-        -- filetypes whitelist
-        -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
-        filetypes = {"png", "webp", "jpg", "jpeg"},
-        find_cmd = "rg" -- find command (defaults to `fd`)
-      },
     file_browser = {
         -- set true to disables netrw and use telescope-file-browser in its place
         hijack_netrw = false,
@@ -118,4 +108,3 @@ telescope.setup {
   },
 }
 telescope.load_extension "file_browser"
-telescope.load_extension "media_files"
