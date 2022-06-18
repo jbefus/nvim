@@ -32,7 +32,8 @@ vim.keymap.set('x', '<A-k>', ":move '<-2<CR>gv-gv")
 -- telescope
 vim.keymap.set('n', '<C-p>', ':Telescope git_files<cr>')
 vim.keymap.set('n', '<A-p>', ':Telescope live_grep<cr>')
-vim.keymap.set('n', '<C-b>', ':Telescope file_browser<cr>')
+-- nvim tree
+vim.keymap.set('n', '<C-b>', ':NvimTreeToggle<cr>')
 
 -- replace paste with keep paste
 vim.keymap.set("v", "p", '"_dp')

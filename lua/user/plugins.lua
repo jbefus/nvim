@@ -46,6 +46,7 @@ return require('packer').startup(function(use)
         'dracula/vim',
         as = 'dracula'
     }
+
     -- common deps
     use "nvim-lua/plenary.nvim" -- lua functions required by many packages
     use "nvim-lua/popup.nvim" -- popup api, also used by many packages
@@ -55,6 +56,7 @@ return require('packer').startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+
     -- cmp
     use "hrsh7th/nvim-cmp"
     use "hrsh7th/cmp-buffer"
@@ -86,19 +88,24 @@ return require('packer').startup(function(use)
     }
 })
     use "neovim/nvim-lspconfig"
+
     -- commenting
     use "numToStr/Comment.nvim" 
     use "JoosepAlviste/nvim-ts-context-commentstring"
+
     -- telescope
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-telescope/telescope-media-files.nvim'
     use { "nvim-telescope/telescope-file-browser.nvim" }
     use {'lewis6991/gitsigns.nvim'}
 
+    -- nvim tree
+    use {'kyazdani42/nvim-web-devicons'}
+    use {'kyazdani42/nvim-tree.lua'}
     -- utility
     use 'tpope/vim-surround'
     use "mattn/emmet-vim"
-  
+
 
 end)
 

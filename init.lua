@@ -8,6 +8,7 @@ require("user.telescope")
 require("user.treesitter")
 require("user.comment")
 require("user.gitsigns")
+require("user.nvimtree")
 
 vim.cmd [[colorscheme dracula]]
 vim.cmd [[:PackerCompile]]

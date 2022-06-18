@@ -99,8 +99,8 @@ telescope.setup {
         find_cmd = "rg" -- find command (defaults to `fd`)
       },
     file_browser = {
-        -- disables netrw and use telescope-file-browser in its place
-        hijack_netrw = true,
+        -- set true to disables netrw and use telescope-file-browser in its place
+        hijack_netrw = false,
         mappings = {
           ["i"] = {
             -- your custom insert mode mappings
