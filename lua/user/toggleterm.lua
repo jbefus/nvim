@@ -22,7 +22,7 @@ toggleterm.setup({
 })
 
 function _G.set_terminal_keymaps()
-	vim.keymap.set("t", "<esc>", [[<C-\><C-n>]])
+	--	vim.keymap.set("t", "<esc>", [[<C-\><C-n>]])
 	vim.keymap.set("t", "<C-h>", [[<C-\><C-n><C-W>h]])
 	vim.keymap.set("t", "<C-j>", [[<C-\><C-n><C-W>j]])
 	vim.keymap.set("t", "<C-k>", [[<C-\><C-n><C-W>k]])

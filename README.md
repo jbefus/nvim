@@ -18,7 +18,7 @@
 
 ---
 
-## Ressources
+## Resources
 
 [config with lua basics](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/)
 
@@ -68,7 +68,7 @@ Emphasize hello: `ysiw<em>`
 
       <em>Hello</em> world!
 
-Finally, let's try out visual mode. Press a capital V (for linewise
+Finally, let's try out visual mode. Press a capital V (for line-wise
 visual mode) followed by `S<p class="important">`.
 
       <p class="important">
@@ -76,7 +76,7 @@ visual mode) followed by `S<p class="important">`.
       </p>
 
 This plugin is very powerful for HTML and XML editing, a niche which
-currently seems underfilled in Vim land. (As opposed to HTML/XML
+currently seems under-filled in Vim land. (As opposed to HTML/XML
 _inserting_, for which many plugins are available). Adding, changing,
 and removing pairs of tags simultaneously is a breeze.
 
