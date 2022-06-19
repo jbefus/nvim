@@ -88,6 +88,7 @@ return require('packer').startup(function(use)
     }
 })
     use "neovim/nvim-lspconfig"
+    use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
     -- commenting
     use "numToStr/Comment.nvim"

@@ -15,12 +15,16 @@
   ```
   npm i -g neovim
   ```
+
 ---
 
 ## Ressources
-[config with lua basics](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/) 
+
+[config with lua basics](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/)
+
 ### Vim Surround reference
-It's easiest to explain with examples.  Press `cs"'` inside
+
+It's easiest to explain with examples. Press `cs"'` inside
 
     "Hello world!"
 
@@ -69,8 +73,8 @@ visual mode) followed by `S<p class="important">`.
     </p>
 
 This plugin is very powerful for HTML and XML editing, a niche which
-currently seems underfilled in Vim land.  (As opposed to HTML/XML
-*inserting*, for which many plugins are available).  Adding, changing,
+currently seems underfilled in Vim land. (As opposed to HTML/XML
+_inserting_, for which many plugins are available). Adding, changing,
 and removing pairs of tags simultaneously is a breeze.
 
 The `.` command will work with `ds`, `cs`, and `yss` if you install
@@ -80,10 +84,10 @@ The `.` command will work with `ds`, `cs`, and `yss` if you install
 
 ```html
 .contet
-````
+```
 
-press CTRL + y and then ,(comma) 
+press CTRL + y and then ,(comma)
 
 ```html
-  <div class="contet"></div>
+<div class="contet"></div>
 ```

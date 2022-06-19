@@ -20,8 +20,8 @@ vim.keymap.set('v', '<', '<gv')
 -- vim.keymap.set('n', '<Leader>sr', ':source ' .. os.getenv("MYVIMRC"))
 
 -- buffer navigation
-vim.keymap.set('n', '<S-h>', ':bprevious<CR>',{silent = true})
-vim.keymap.set('n', '<S-l>', ':bnext<CR>',{silent = true})
+vim.keymap.set('n', '<S-h>', ':bprevious<CR>', { silent = true })
+vim.keymap.set('n', '<S-l>', ':bnext<CR>', { silent = true })
 
 -- move line up and down
 vim.keymap.set('n', '<A-j>', ':m .+1<cr>==')
@@ -37,6 +37,7 @@ vim.keymap.set('n', '<C-b>', ':NvimTreeToggle<cr>')
 
 -- replace paste with keep paste
 vim.keymap.set("v", "p", '"_dp')
+
 -- nnoremap <SPACE> <Nop>
 -- let mapleader = " "
 
