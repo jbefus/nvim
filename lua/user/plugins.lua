@@ -93,6 +93,7 @@ return require("packer").startup(function(use)
 	})
 	use("neovim/nvim-lspconfig")
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
+	use({ "RRethy/vim-illuminate" })
 
 	-- commenting
 	use("numToStr/Comment.nvim")
@@ -120,4 +121,14 @@ return require("packer").startup(function(use)
 
 	use("nvim-lualine/lualine.nvim")
 	use("akinsho/toggleterm.nvim")
+	-- DAP
+	use({ "mfussenegger/nvim-dap" })
+	use({ "rcarriga/nvim-dap-ui" })
+	use({ "ravenxrz/DAPInstall.nvim" })
+
+	-- Automatically set up your configuration after cloning packer.nvim
+	-- Put this at the end after all plugins
+	if PACKER_BOOTSTRAP then
+		require("packer").sync()
+	end
 end)
