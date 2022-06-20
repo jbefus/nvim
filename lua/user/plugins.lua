@@ -118,9 +118,9 @@ return require("packer").startup(function(use)
 	use("mattn/emmet-vim")
 	use("lewis6991/impatient.nvim")
 	use("dstein64/vim-startuptime")
-
 	use("nvim-lualine/lualine.nvim")
 	use("akinsho/toggleterm.nvim")
+
 	-- DAP
 	use({ "mfussenegger/nvim-dap" })
 	use({ "rcarriga/nvim-dap-ui" })
