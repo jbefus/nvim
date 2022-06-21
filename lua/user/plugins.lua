@@ -104,7 +104,7 @@ return require("packer").startup(function(use)
 	use("nvim-telescope/telescope-media-files.nvim")
 	use({ "nvim-telescope/telescope-file-browser.nvim" })
 	use({ "lewis6991/gitsigns.nvim" })
-
+	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 	-- nvim tree
 	use({ "kyazdani42/nvim-web-devicons" })
 	use({ "kyazdani42/nvim-tree.lua" })
@@ -124,7 +124,9 @@ return require("packer").startup(function(use)
 	-- DAP
 	use({ "mfussenegger/nvim-dap" })
 	use({ "rcarriga/nvim-dap-ui" })
-	use({ "ravenxrz/DAPInstall.nvim" })
+	-- use({ "ravenxrz/DAPInstall.nvim" })
+	use({ "Samsung/netcoredbg" })
+	use({ "theHamsta/nvim-dap-virtual-text" })
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
