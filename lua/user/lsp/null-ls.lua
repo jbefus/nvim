@@ -15,6 +15,7 @@ null_ls.setup({
 	sources = {
 		formatting.prettier,
 		formatting.stylua,
+		formatting.rustywind,
 		diagnostics.eslint,
 		null_ls.builtins.code_actions.eslint,
 		-- diagnostics.flake8
@@ -26,7 +27,7 @@ null_ls.setup({
 				group = augroup,
 				buffer = bufnr,
 				callback = function(client)
-					vim.lsp.buf.formatting_sync()
+					vim.lsp.buf.format()
 				end,
 			})
 		end

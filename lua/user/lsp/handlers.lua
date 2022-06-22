@@ -68,7 +68,7 @@ local function lsp_keymaps()
 	vim.keymap.set("n", "<leader>dN", '<cmd>lua vim.diagnostic.goto_prev({ border = "rounded" })<CR>')
 	vim.keymap.set("n", "<leader>dn", '<cmd>lua vim.diagnostic.goto_next({ border = "rounded" })<CR>')
 	vim.keymap.set("n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>")
-	vim.cmd([[ command! Format execute 'lua vim.lsp.buf.formatting()' ]])
+	vim.cmd([[ command! Format execute 'lua vim.lsp.buf.format()' ]])
 	vim.keymap.set("n", "<M-F>", "<cmd>Format<cr>")
 end
 
