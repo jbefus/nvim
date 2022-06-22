@@ -4,6 +4,12 @@ if not status_ok then
 	return
 end
 
+local status_ok_trouble, trouble_provider = pcall(require, "trouble.providers.telescope")
+if not status_ok_trouble then
+	print("couldn't setup telescope " .. trouble_provider)
+	return
+end
+
 local actions = require("telescope.actions")
 
 telescope.setup({
@@ -51,6 +57,7 @@ telescope.setup({
 				["<M-x>"] = actions.select_horizontal,
 				["<M-v>"] = actions.select_vertical,
 				["<M-t>"] = actions.select_tab,
+				["<leader><leader>t"] = trouble_provider.open_with_trouble,
 
 				["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,
 				["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,

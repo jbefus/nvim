@@ -94,6 +94,7 @@ return require("packer").startup(function(use)
 	use("neovim/nvim-lspconfig")
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
 	use({ "RRethy/vim-illuminate" })
+	use({ "folke/trouble.nvim" })
 
 	-- commenting
 	use("numToStr/Comment.nvim")
@@ -105,6 +106,7 @@ return require("packer").startup(function(use)
 	use({ "nvim-telescope/telescope-file-browser.nvim" })
 	use({ "lewis6991/gitsigns.nvim" })
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+
 	-- nvim tree
 	use({ "kyazdani42/nvim-web-devicons" })
 	use({ "kyazdani42/nvim-tree.lua" })
@@ -124,7 +126,7 @@ return require("packer").startup(function(use)
 		"weilbith/nvim-code-action-menu",
 		cmd = "CodeActionMenu",
 	})
-
+	use("unblevable/quick-scope")
 	-- DAP
 	use({ "mfussenegger/nvim-dap" })
 	use({ "rcarriga/nvim-dap-ui" })
