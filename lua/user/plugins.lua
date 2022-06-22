@@ -120,6 +120,10 @@ return require("packer").startup(function(use)
 	use("dstein64/vim-startuptime")
 	use("nvim-lualine/lualine.nvim")
 	use("akinsho/toggleterm.nvim")
+	use({
+		"weilbith/nvim-code-action-menu",
+		cmd = "CodeActionMenu",
+	})
 
 	-- DAP
 	use({ "mfussenegger/nvim-dap" })
