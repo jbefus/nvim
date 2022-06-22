@@ -1,8 +1,15 @@
-# Welcome to drgg's nvim config
+# my neovim config for c# + svelte + tailwindcss web dev
+
+23/06/2022: as of right now this runs pretty stable on wsl2 ubuntu 22 LTS on neovim 0.8.0 \[c9432528\]
+
+feel free to use this as reference point, i can not promise this stays stable all the time, because I'm constantly tweaking things.
+I've gotten a lot of inspiration from [Chris@machine](https://github.com/ChristianChiarulli). 
+
+![How it looks by default](https://gitlab.becute.dev/drgg/image-dump/-/raw/mega/Screenshot%202022-06-23%20105606.png))
 
 ## 100% lua, 100% luv
 
-## What things you 100% need:
+## things you 100% need:
 
 - Neovim python support
 
@@ -15,6 +22,8 @@
   ```
   npm i -g neovim
   ```
+  
+also: I'm on nightly, so if you are on neovim/stable you might experience some issues :/
 
 ---
 
@@ -82,6 +91,8 @@ and removing pairs of tags simultaneously is a breeze.
 
 The `.` command will work with `ds`, `cs`, and `yss` if you install
 [repeat.vim](https://github.com/tpope/vim-repeat).
+  
+[checkout tpope/vim.surround](https://github.com/tpope/vim-surround)
 
 </details>
 
