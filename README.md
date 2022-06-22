@@ -1,6 +1,6 @@
 # Welcome to drgg's nvim config
 
-### 100% lua, 100% luv
+## 100% lua, 100% luv
 
 ## What things you 100% need:
 
@@ -102,16 +102,16 @@ _Note in regards to prettier and svelte: make sure the required plugins are eith
 <details>
 <summary>install history from netcoredbg</summary>
 
--  845  cd ~/.local/share/nvim/site/pack/packer/start/netcoredbg/
--  852  mkdir build
--  853  cd build/
--  855  sudo apt install clang
--  856  CC=clang CXX=clang++ cmake ..
--  859  cd build/
--  860  make
--  862  sudo make install
--  868  /usr/local/netcoredbg --buildinfo
+- 845 cd ~/.local/share/nvim/site/pack/packer/start/netcoredbg/
+- 852 mkdir build
+- 853 cd build/
+- 855 sudo apt install clang
+- 856 CC=clang CXX=clang++ cmake ..
+- 859 cd build/
+- 860 make
+- 862 sudo make install
+- 868 /usr/local/netcoredbg --buildinfo
 
-  [check here](https://github.com/Samsung/netcoredbg) 
+[check here](https://github.com/Samsung/netcoredbg)
 
 </details>
