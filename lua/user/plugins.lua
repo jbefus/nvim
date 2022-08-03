@@ -126,7 +126,7 @@ return require("packer").startup(function(use)
 		"weilbith/nvim-code-action-menu",
 		cmd = "CodeActionMenu",
 	})
-	use("unblevable/quick-scope")
+	-- use("unblevable/quick-scope")
 	-- DAP
 	use({ "mfussenegger/nvim-dap" })
 	use({ "rcarriga/nvim-dap-ui" })

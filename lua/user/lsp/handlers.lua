@@ -93,8 +93,8 @@ M.on_attach = function(client)
 	-- TODO: refactor this into a method that checks if string in list
 	print("client name", client.name)
 	if client.name == "tsserver" or client.name == "sumneko_lua" then
-		client.resolved_capabilities.document_formatting = false
-		client.resolved_capabilities["document_range_formatting"] = false
+		client.server_capabilities.document_formatting = false
+		client.server_capabilities["document_range_formatting"] = false
 	end
 	lsp_keymaps()
 	lsp_highlight_document(client)
