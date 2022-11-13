@@ -74,23 +74,9 @@ return require("packer").startup(function(use)
 	use("L3MON4D3/LuaSnip")
 	use("rafamadriz/friendly-snippets")
 
-	-- lsp
-	use({
-		"williamboman/nvim-lsp-installer",
-		config = function()
-			require("nvim-lsp-installer").setup({})
-		end,
-	})
-	require("nvim-lsp-installer").setup({
-		automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
-		ui = {
-			icons = {
-				server_installed = "✓",
-				server_pending = "➜",
-				server_uninstalled = "✗",
-			},
-		},
-	})
+  -- lsp
+  use { "williamboman/mason.nvim" }
+  use { "williamboman/mason-lspconfig.nvim" }-- })
 	use("neovim/nvim-lspconfig")
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
 	use({ "RRethy/vim-illuminate" })
