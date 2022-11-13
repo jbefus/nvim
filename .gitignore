@@ -1,3 +1,4 @@
 plugin
 ref
 .netcoredbg_hist
+.luarc.json
