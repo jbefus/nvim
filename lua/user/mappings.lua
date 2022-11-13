@@ -2,6 +2,7 @@
 -- userhome = "~/.config/nvim/init.lua<CR>" -- UNIX
 vim.g.mapleader = " "
 vim.keymap.set("n", "<Leader>w", ":write<CR>")
+vim.keymap.set("n", "<Leader>qq", ":qa!<CR>")
 vim.keymap.set("i", "jk", "<ESC>")
 vim.keymap.set("n", "<C-v>", '"+gP')
 
