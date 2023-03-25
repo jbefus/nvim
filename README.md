@@ -5,8 +5,6 @@
 feel free to use this as reference point, i can not promise this stays stable all the time, because I'm constantly tweaking things.
 I've gotten a lot of inspiration from [Chris@machine](https://github.com/ChristianChiarulli).
 
-![How it looks by default](https://gitlab.becute.dev/drgg/image-dump/-/raw/mega/Screenshot%202022-06-23%20105606.png))
-
 ## clipboard support!
 
 make sure win32yank is atleast at version 0.0.4
