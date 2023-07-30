@@ -3,14 +3,14 @@
 
 local status_ok, nvim_tree = pcall(require, "nvim-tree")
 if not status_ok then
-	print("couln't load nvim-tree" .. nvim_tree)
-	return
+  print("couln't load nvim-tree" .. nvim_tree)
+  return
 end
 
 local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
 if not config_status_ok then
-	print("couln't load nvim-tree-config" .. nvim_tree_config)
-	return
+  print("couln't load nvim-tree-config" .. nvim_tree_config)
+  return
 end
 
 -- Replaces auto_close

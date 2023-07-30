@@ -4,6 +4,26 @@
 
 feel free to use this as reference point, i can not promise this stays stable all the time, because I'm constantly tweaking things.
 I've gotten a lot of inspiration from [Chris@machine](https://github.com/ChristianChiarulli).
+## Installation
+
+
+Ubuntu: This is how you get the latest nvim version on ubuntu. Works for **wsl**.
+
+```
+sudo apt-get install ninja-build gettext cmake unzip curl
+```
+
+```
+git clone https://github.com/neovim/neovim
+```
+
+```
+cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
+``` 
+
+```
+sudo make install
+```
 
 ## clipboard support!
 
