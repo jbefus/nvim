@@ -9,7 +9,17 @@ if not status_ok_config then
 	return
 end
 
-local servers = { "dockerls", "omnisharp", "tailwindcss", "tsserver", "marksman", "svelte", "jsonls", "lua_ls" }
+local servers = {
+	"dockerls",
+	"omnisharp",
+	"tailwindcss",
+	"tsserver",
+	"marksman",
+	"svelte",
+	"jsonls",
+	"lua_ls",
+	"rust_analyzer",
+}
 
 lsp_installer.setup({
 	ensure_installed = servers,
