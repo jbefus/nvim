@@ -1,4 +1,8 @@
-plugin
-ref
-.netcoredbg_hist
-**/.luarc.json
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
