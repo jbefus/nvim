@@ -5,10 +5,13 @@
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
+
   -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
 
-  -- Configure LazyVim to load gruvbox
+  -- add everforest
+  { "sainnhe/everforest" },
+  { "liuchengxu/vista.vim" },
   {
     "LazyVim/LazyVim",
     opts = {
@@ -16,33 +19,15 @@ return {
     },
   },
 
-  -- disable trouble
-  { "folke/flash.nvim", enabled = false },
-
-  -- add more treesitter parsers
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        "svelte",
-        "bash",
-        "html",
-        "javascript",
-        "json",
-        "lua",
-        "markdown",
-        "markdown_inline",
-        "python",
-        "query",
-        "regex",
-        "tsx",
-        "typescript",
-        "vim",
-        "yaml",
-      },
+  "OlegGulevskyy/better-ts-errors.nvim",
+  dependencies = { "MunifTanjim/nui.nvim" },
+  config = {
+    keymaps = {
+      toggle = "<leader>dd", -- default '<leader>dd'
+      go_to_definition = "<leader>dx", -- default '<leader>dx'
     },
   },
 
-  -- use mini.starter instead of alpha
-  { import = "lazyvim.plugins.extras.ui.mini-starter" },
+  -- disable flash
+  { "folke/flash.nvim", enabled = false },
 }
