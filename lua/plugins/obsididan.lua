@@ -20,7 +20,7 @@ return {
         workspaces = {
             {
                 name = "drgg_brain",
-                path = "~/_repos/drgg_brain",
+                path = "/mnt/c/Users/befus/OneDrive/drgg_brain",
             },
         },
         attachments = {
